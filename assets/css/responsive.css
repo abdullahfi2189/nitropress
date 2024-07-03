@@ -1,0 +1,114 @@
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 1340px !important;
+    padding: 0px 20px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .key-features-left {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .key-features-left ul li {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .banner-left {
+    max-width: 400px;
+  }
+  .banner-inner .banner-btns {
+    margin-top: -30%;
+  }
+  .banner-card h4 {
+    font-size: 16px;
+  }
+  .banner-card p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .banner-content .banner-img {
+    right: 0px;
+    z-index: 0;
+    width: 95%;
+    left: auto;
+  }
+  .key-features-left {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .key-features-left ul li {
+    font-size: 16px;
+  }
+  .key-features-left ul li img {
+    height: 30px;
+    width: 30px;
+  }
+  .banner-inner .banner-btns {
+    max-width: 260px;
+  }
+  .banner-inner .banner-btns ul li button {
+    padding: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .key-features-section {
+    flex-wrap: wrap;
+  }
+  .key-features-section .key-features-left {
+    width: 100%;
+  }
+  .key-features-section .key-features-left-inner {
+    max-width: 500px;
+    margin: auto;
+  }
+  .key-features-section .key-features-right {
+    width: 100%;
+  }
+  .key-features-section .key-features-right-content {
+    max-width: 500px;
+    margin: auto;
+  }
+  .banner-top-text {
+    max-width: 385px;
+    margin: auto;
+  }
+  .banner-left {
+    margin: auto;
+    margin-top: 30px;
+  }
+  .banner-cards {
+    margin-bottom: 30px;
+  }
+  .rating-content {
+    margin: auto;
+  }
+  .banner-inner {
+    flex-wrap: wrap;
+  }
+  .banner-inner .desktop-banner-btns {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .banner-inner .desktop-banner-btns ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-inner .desktop-banner-btns ul li {
+    padding: 0px 10px;
+    width: 50%;
+  }
+  .banner-content .banner-img {
+    position: relative;
+    width: 100%;
+  }
+}
