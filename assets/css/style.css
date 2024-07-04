@@ -28,6 +28,35 @@ ul {
   list-style: none;
 }
 
+/*-- mobile header style start --*/
+.mobile-header-section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.mobile-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 20px;
+}
+.mobile-header-inner .mobile-header-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 21px;
+}
+.mobile-header-inner .mobile-header-left button {
+  background: transparent;
+  border: none;
+}
+.mobile-header-inner .mobile-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 21px;
+}
+
+/*-- mobile header style end --*/
 /*-- banner style start --*/
 .banner-top-text {
   position: relative;
@@ -112,7 +141,8 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-.banner-inner .banner-btns {
+
+.banner-btns {
   max-width: 291px;
   width: 100%;
   margin-left: auto;
@@ -120,14 +150,14 @@ ul {
   position: relative;
   z-index: 1;
 }
-.banner-inner .banner-btns ul {
+.banner-btns ul {
   margin: 0;
   padding: 0;
 }
-.banner-inner .banner-btns ul li {
+.banner-btns ul li {
   margin-bottom: 23px;
 }
-.banner-inner .banner-btns ul li h6 {
+.banner-btns ul li h6 {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -136,7 +166,7 @@ ul {
   line-height: 176.471%;
   letter-spacing: -0.51px;
 }
-.banner-inner .banner-btns ul li button {
+.banner-btns ul li button {
   color: #FFF;
   text-align: center;
   font-family: Inter;
@@ -153,9 +183,13 @@ ul {
   border: 2px solid #1D99DF;
   transition: 0.3s;
 }
-.banner-inner .banner-btns ul li button:hover {
+.banner-btns ul li button:hover {
   background: transparent;
   color: #1D99DF;
+}
+
+.mobile-banner {
+  display: none;
 }
 
 .banner-card {

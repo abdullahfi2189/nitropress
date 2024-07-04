@@ -24,6 +24,36 @@ ul {
     list-style: none;
 }
 
+/*-- mobile header style start --*/
+.mobile-header-section{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+}   
+.mobile-header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 20px;
+    .mobile-header{
+        &-left{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 21px;
+            button{
+                background: transparent;
+                border: none;
+            }
+        }
+        &-right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 21px;
+        }
+    }
+}
+/*-- mobile header style end --*/   
+
 /*-- banner style start --*/
 .banner-top-text{
     position: relative;
@@ -102,51 +132,54 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .banner-btns{
-        max-width: 291px;
-        width: 100%;
-        margin-left: auto;
-        margin-top: -15%;
-        position: relative;
-        z-index: 1;
-        ul{
-            margin: 0;
-            padding: 0;
-            li{
-                margin-bottom: 23px;
-                h6{
-                    color: #000;
-                    text-align: center;
-                    font-family: Inter;
-                    font-size: 17px;
-                    font-weight: 400;
-                    line-height: 176.471%;
-                    letter-spacing: -0.51px;
-                }
-                button{
-                    color: #FFF;
-                    text-align: center;
-                    font-family: Inter;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    letter-spacing: -0.54px;
-                    text-transform: uppercase;
-                    border-radius: 15px;
-                    background: #1D99DF;
-                    width: 100%;
-                    padding: 20px;
-                    border: 2px solid #1D99DF;
-                    transition: 0.3s;
-                    &:hover{
-                        background: transparent;
-                        color: #1D99DF;
-                    }
+}
+.banner-btns{
+    max-width: 291px;
+    width: 100%;
+    margin-left: auto;
+    margin-top: -15%;
+    position: relative;
+    z-index: 1;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            margin-bottom: 23px;
+            h6{
+                color: #000;
+                text-align: center;
+                font-family: Inter;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 176.471%;
+                letter-spacing: -0.51px;
+            }
+            button{
+                color: #FFF;
+                text-align: center;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.54px;
+                text-transform: uppercase;
+                border-radius: 15px;
+                background: #1D99DF;
+                width: 100%;
+                padding: 20px;
+                border: 2px solid #1D99DF;
+                transition: 0.3s;
+                &:hover{
+                    background: transparent;
+                    color: #1D99DF;
                 }
             }
         }
     }
+}
+.mobile-banner{
+    display: none;
 }
 .banner-card{
     border-radius: 20px;
