@@ -31,6 +31,7 @@ ul {
 /*-- mobile header style start --*/
 .mobile-header-section {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: none;
 }
 
 .mobile-header-inner {
@@ -190,6 +191,10 @@ ul {
 
 .mobile-banner {
   display: none;
+}
+
+.mobile-banner-img {
+  text-align: center;
 }
 
 .banner-card {

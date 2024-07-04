@@ -27,6 +27,7 @@ ul {
 /*-- mobile header style start --*/
 .mobile-header-section{
     border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+    display: none;
 }   
 .mobile-header-inner{
     display: flex;
@@ -180,6 +181,9 @@ ul {
 }
 .mobile-banner{
     display: none;
+}
+.mobile-banner-img{
+    text-align: center;
 }
 .banner-card{
     border-radius: 20px;

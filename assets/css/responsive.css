@@ -111,6 +111,18 @@
     position: relative;
     width: 100%;
   }
+  .banner-top-text {
+    max-width: 266px;
+  }
+  .banner-top-text h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .banner-top-text h6 {
+    font-size: 18px;
+    text-align: center;
+    margin-left: 0px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .banner-inner .banner-btns ul li h6 {
@@ -120,6 +132,9 @@
 @media only screen and (max-width: 575px) {
   .sm-p-0 {
     padding: 0px !important;
+  }
+  .mobile-header-section {
+    display: block;
   }
   .key-features-left {
     padding: 40px 20px;
@@ -149,18 +164,6 @@
   }
   .banner-section {
     padding: 29px 0px;
-  }
-  .banner-top-text {
-    max-width: 266px;
-  }
-  .banner-top-text h1 {
-    font-size: 34px;
-    text-align: center;
-  }
-  .banner-top-text h6 {
-    font-size: 18px;
-    text-align: center;
-    margin-left: 0px;
   }
   .rating-content {
     margin-bottom: 14px;
