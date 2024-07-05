@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="body-container">
     <!-- mobile header start -->
     <header class="mobile-header-section">
         <div class="mobile-header-inner">
@@ -86,15 +87,18 @@
                                 <div class="rating-slider-desktop">
                                     <div class="rating-card">
                                         <h4>Fantastic Machine</h4>
-                                        <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                                        <p>This is such a great machine, I use it every morning to make my Nitro Coffee
+                                        </p>
                                     </div>
                                     <div class="rating-card">
                                         <h4>Fantastic Machine</h4>
-                                        <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                                        <p>This is such a great machine, I use it every morning to make my Nitro Coffee
+                                        </p>
                                     </div>
                                     <div class="rating-card">
                                         <h4>Fantastic Machine</h4>
-                                        <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                                        <p>This is such a great machine, I use it every morning to make my Nitro Coffee
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +151,7 @@
                                     <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -252,14 +256,40 @@
     </section>
     <!-- key-features-section end -->
 
+    <!-- img-slider start -->
+    <div class="img-slider-section">
+        <div class="img-slider-inner">
+            <div class="img-slider-left">
+                <div class="img-slider-for">
+                    <div class="slide-img"><img src="./assets/images/img/slide-img.png" alt="img"></div>
+                    <div class="slide-img"><img src="./assets/images/img/slide-img.png" alt="img"></div>
+                    <div class="slide-img"><img src="./assets/images/img/slide-img.png" alt="img"></div>
+                    <div class="slide-img"><img src="./assets/images/img/slide-img.png" alt="img"></div>
+                    <div class="slide-img"><img src="./assets/images/img/slide-img.png" alt="img"></div>
+                </div>
+            </div>
+            <div class="img-slider-right">
+                <div class="img-slider-nav">
+                    <div class="slide-nav-btn one"></div>
+                    <div class="slide-nav-btn two"></div>
+                    <div class="slide-nav-btn three"></div>
+                    <div class="slide-nav-btn four"></div>
+                    <div class="slide-nav-btn five"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- img-slider end -->
+    </div>
+
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
 
     <script>
         var bannerCardSlider = $(".banner-cards-slider");
-            if (bannerCardSlider.length) {
-                $('.banner-cards-slider').slick({
+        if (bannerCardSlider.length) {
+            $('.banner-cards-slider').slick({
                 infinite: true,
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -267,12 +297,12 @@
                 dots: false,
             });
         }
-        
+
     </script>
     <script>
         var ratingSliderDesktop = $(".rating-slider-desktop");
-            if (ratingSliderDesktop.length) {
-                $('.rating-slider-desktop').slick({
+        if (ratingSliderDesktop.length) {
+            $('.rating-slider-desktop').slick({
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -280,12 +310,12 @@
                 dots: false,
             });
         }
-        
+
     </script>
     <script>
         var ratingSliderMobile = $(".rating-slider-mobile");
-            if (ratingSliderMobile.length) {
-                $('.rating-slider-mobile').slick({
+        if (ratingSliderMobile.length) {
+            $('.rating-slider-mobile').slick({
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -293,8 +323,37 @@
                 dots: false,
             });
         }
-        
     </script>
+    <script>
+        var ratingSliderMobile = $(".img-slider-for");
+        if (ratingSliderMobile.length) {
+            $('.img-slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: false,
+                dots: false,
+                asNavFor: '.img-slider-nav'
+            });
+        }
+        var ratingSliderMobile = $(".img-slider-nav");
+        if (ratingSliderMobile.length) {
+            $('.img-slider-nav').slick({
+                slidesToShow: 5,
+                slidesToScroll: 0,
+                asNavFor: '.img-slider-for',
+                arrows: false,
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true
+            });
+        }
+
+
+    </script>
+
+
+
 </body>
 
 </html>
