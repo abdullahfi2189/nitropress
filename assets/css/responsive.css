@@ -199,45 +199,4 @@
   .banner-cards-slider .slick-track {
     height: 230px;
   }
-  .rating-slider {
-    overflow-x: hidden;
-    position: relative;
-  }
-  .rating-slider .slick-next {
-    height: 26px;
-    width: 26px;
-    background: #9E9E9E;
-    border-radius: 50%;
-    right: 0px;
-    z-index: 11;
-  }
-  .rating-slider .slick-next:hover {
-    background: #1D99DF;
-  }
-  .rating-slider .slick-next::before {
-    content: url(../images/icons/next.svg);
-  }
-  .rating-slider .slick-prev {
-    height: 26px;
-    width: 26px;
-    background: #9E9E9E;
-    border-radius: 50%;
-    left: 0px;
-    z-index: 11;
-  }
-  .rating-slider .slick-prev:hover {
-    background: #1D99DF;
-  }
-  .rating-slider .slick-prev::before {
-    content: url(../images/icons/prev.svg);
-  }
-  .rating-slider .rating-card {
-    transform: translateX(6px);
-  }
-  .slick-track {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 22px;
-  }
 }

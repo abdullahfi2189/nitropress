@@ -72,7 +72,7 @@
                         </div>
 
                         <div class="rating-content">
-                            <div class="rating-top">
+                            <div class="rating-top ml-15">
                                 <ul>
                                     <li><img src="./assets/images/icons/star.svg" alt="icon"></li>
                                     <li><img src="./assets/images/icons/star.svg" alt="icon"></li>
@@ -82,9 +82,21 @@
                                 </ul>
                                 <span>250 Ratings</span>
                             </div>
-                            <div class="rating-card">
-                                <h4>Fantastic Machine</h4>
-                                <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                            <div class="rating-slider">
+                                <div class="rating-slider-desktop">
+                                    <div class="rating-card">
+                                        <h4>Fantastic Machine</h4>
+                                        <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                                    </div>
+                                    <div class="rating-card">
+                                        <h4>Fantastic Machine</h4>
+                                        <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                                    </div>
+                                    <div class="rating-card">
+                                        <h4>Fantastic Machine</h4>
+                                        <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,18 +133,21 @@
                             <span>250 Ratings</span>
                         </div>
                         <div class="rating-slider">
-                            <div class="rating-card">
-                                <h4>Fantastic Machine</h4>
-                                <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                            <div class="rating-slider-mobile">
+                                <div class="rating-card">
+                                    <h4>Fantastic Machine</h4>
+                                    <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                                </div>
+                                <div class="rating-card">
+                                    <h4>Fantastic Machine</h4>
+                                    <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                                </div>
+                                <div class="rating-card">
+                                    <h4>Fantastic Machine</h4>
+                                    <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
+                                </div>
                             </div>
-                            <div class="rating-card">
-                                <h4>Fantastic Machine</h4>
-                                <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
-                            </div>
-                            <div class="rating-card">
-                                <h4>Fantastic Machine</h4>
-                                <p>This is such a great machine, I use it every morning to make my Nitro Coffee</p>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -255,9 +270,22 @@
         
     </script>
     <script>
-        var ratingSlider = $(".rating-slider");
-            if (ratingSlider.length) {
-                $('.rating-slider').slick({
+        var ratingSliderDesktop = $(".rating-slider-desktop");
+            if (ratingSliderDesktop.length) {
+                $('.rating-slider-desktop').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+            });
+        }
+        
+    </script>
+    <script>
+        var ratingSliderMobile = $(".rating-slider-mobile");
+            if (ratingSliderMobile.length) {
+                $('.rating-slider-mobile').slick({
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
