@@ -347,12 +347,19 @@ ul {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .key-features-left {
-  background: #1D99DF;
+  background: transparent;
   width: 40%;
-  padding: 100px 60px 70px 60px;
+}
+.key-features-left .key-features-left-inner {
+  background: #1D99DF;
+  padding: 70px 60px;
+  width: 100%;
+  top: 0px !important;
+  height: 110vh;
 }
 .key-features-left h3 {
   color: #FFF;
@@ -362,7 +369,7 @@ ul {
   font-weight: 500;
   line-height: 129.412%;
   letter-spacing: -1.02px;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 .key-features-left ul {
   margin: 0;
@@ -383,8 +390,8 @@ ul {
   gap: 15px;
 }
 .key-features-left ul li img {
-  height: 39px;
-  width: 39px;
+  height: 35px;
+  width: 35px;
 }
 .key-features-left button {
   color: #000;
@@ -401,7 +408,7 @@ ul {
   border: 2px solid #FFFFFF;
   border-radius: 15px;
   background: #FFF;
-  margin-top: 30px;
+  margin-top: 20px;
   transition: 0.3s;
 }
 .key-features-left button:hover {

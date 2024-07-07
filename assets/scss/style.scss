@@ -385,13 +385,19 @@ ul {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .key-features-left {
-    background: #1D99DF;
+    background: transparent;
     width: 40%;
-    padding: 100px 60px 70px 60px;
-
+    .key-features-left-inner{
+        background: #1D99DF;
+        padding: 70px 60px;
+        width: 100%;
+        top: 0px !important;
+        height: 110vh;
+    }
     h3 {
         color: #FFF;
         font-family: Poppins;
@@ -400,7 +406,7 @@ ul {
         font-weight: 500;
         line-height: 129.412%;
         letter-spacing: -1.02px;
-        margin-bottom: 42px;
+        margin-bottom: 30px;
     }
 
     ul {
@@ -422,8 +428,8 @@ ul {
             gap: 15px;
 
             img {
-                height: 39px;
-                width: 39px;
+                height: 35px;
+                width: 35px;
             }
         }
     }
@@ -443,7 +449,7 @@ ul {
         border: 2px solid #FFFFFF;
         border-radius: 15px;
         background: #FFF;
-        margin-top: 30px;
+        margin-top: 20px;
         transition: 0.3s;
 
         &:hover {

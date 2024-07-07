@@ -211,9 +211,13 @@
     <!-- banner section end -->
 
     <!-- key-features-section start -->
-    <section class="key-features-section">
-        <div class="key-features-left">
-            <div class="key-features-left-inner">
+    <section class="key-features-section main-content"
+        data-spy="scroll"
+        data-target="#list-example"
+        data-offset="20"
+    >
+        <div class="key-features-left sidebar">
+            <div class="key-features-left-inner sidebar__inner" id="list-example">
                 <h3>Key Features</h3>
                 <ul>
                     <li><img src="./assets/images/icons/key-icon1.svg" alt="icon"> <span>No cartridges needed</span>
@@ -241,6 +245,39 @@
             </div>
         </div>
         <div class="key-features-right">
+            <div class="key-features-right-content">
+                <h3>Existing Science. Novel Technology.</h3>
+                <p>The concept was conceived through realising the need for a sustainable and commercially effective
+                    solution to creating nitro drinks. The design brief was simple - create an easy to use, professional
+                    grade machine that was sustainable, intuitive and retained all the great features of the Original
+                    NitroPress. The DS is exactly that - fill with your drink of choice, screw the head unit on, dock
+                    down and pressurise in seconds. Its as simple as that.</p>
+                <div class="key-features-img">
+                    <img src="./assets/images/img/key-features-img.png" alt="img">
+                </div>
+            </div>
+            <div class="key-features-right-content">
+                <h3>Existing Science. Novel Technology.</h3>
+                <p>The concept was conceived through realising the need for a sustainable and commercially effective
+                    solution to creating nitro drinks. The design brief was simple - create an easy to use, professional
+                    grade machine that was sustainable, intuitive and retained all the great features of the Original
+                    NitroPress. The DS is exactly that - fill with your drink of choice, screw the head unit on, dock
+                    down and pressurise in seconds. Its as simple as that.</p>
+                <div class="key-features-img">
+                    <img src="./assets/images/img/key-features-img.png" alt="img">
+                </div>
+            </div>
+            <div class="key-features-right-content">
+                <h3>Existing Science. Novel Technology.</h3>
+                <p>The concept was conceived through realising the need for a sustainable and commercially effective
+                    solution to creating nitro drinks. The design brief was simple - create an easy to use, professional
+                    grade machine that was sustainable, intuitive and retained all the great features of the Original
+                    NitroPress. The DS is exactly that - fill with your drink of choice, screw the head unit on, dock
+                    down and pressurise in seconds. Its as simple as that.</p>
+                <div class="key-features-img">
+                    <img src="./assets/images/img/key-features-img.png" alt="img">
+                </div>
+            </div>
             <div class="key-features-right-content">
                 <h3>Existing Science. Novel Technology.</h3>
                 <p>The concept was conceived through realising the need for a sustainable and commercially effective
@@ -284,6 +321,7 @@
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/sticky-sidebar.js"></script>
     <script src="./assets/js/slick.min.js"></script>
 
     <script>
@@ -352,6 +390,17 @@
 
     </script>
 
+    <script>
+        var sidebarSticky = $(".sidebar");
+    if (sidebarSticky.length) {
+        var sidebar = new StickySidebar(".sidebar", {
+            topSpacing: 20,
+            bottomSpacing: 20,
+            containerSelector: ".main-content",
+            innerWrapperSelector: ".sidebar__inner",
+        });
+    }
+    </script>
 
 
 </body>
