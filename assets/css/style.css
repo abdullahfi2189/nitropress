@@ -457,7 +457,8 @@ ul {
 /*-- img-slider style start --*/
 .img-slider-section {
   background: #F1F1F1;
-  margin-top: 158px;
+  z-index: 11;
+  position: relative;
   overflow-x: hidden;
 }
 
