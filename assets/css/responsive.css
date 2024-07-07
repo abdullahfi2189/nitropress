@@ -1,8 +1,21 @@
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   .container {
     max-width: 1340px !important;
     padding: 0px 20px;
     margin: auto;
+  }
+  .key-features-section.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0; /* Ensures it stays on top of other elements */
+  }
+  .bottom-section {
+    background: #FFFFFF;
+    padding-bottom: 20vh;
+    z-index: 11;
+    position: relative;
+    margin-top: 80vh;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -67,12 +80,16 @@
     flex-wrap: wrap;
   }
   .key-features-section .key-features-left {
+    height: auto !important;
+    padding-bottom: 10px;
     background: #1D99DF;
   }
   .key-features-section .key-features-left .key-features-left-inner {
     position: relative !important;
     width: 100% !important;
     background: transparent;
+    height: auto !important;
+    transform: none !important;
   }
   .key-features-section .key-features-left {
     width: 100%;
@@ -134,6 +151,9 @@
     font-size: 18px;
     text-align: center;
     margin-left: 0px;
+  }
+  .img-slider-inner {
+    padding-bottom: 20px;
   }
   .img-slider-inner .img-slider-right .slick-track .slick-slide {
     min-height: 40px !important;

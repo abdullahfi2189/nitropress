@@ -426,6 +426,10 @@ ul {
   max-width: 648px;
   width: 100%;
   margin: auto;
+  margin-bottom: 50px;
+}
+.key-features-right-content:nth-last-child(1) {
+  margin-bottom: 0px;
 }
 .key-features-right-content h3 {
   color: #000;
@@ -464,7 +468,8 @@ ul {
 /*-- img-slider style start --*/
 .img-slider-section {
   background: #F1F1F1;
-  margin-top: 158px;
+  z-index: 11;
+  position: relative;
   overflow-x: hidden;
 }
 
