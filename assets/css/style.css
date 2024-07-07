@@ -468,8 +468,7 @@ ul {
 /*-- img-slider style start --*/
 .img-slider-section {
   background: #F1F1F1;
-  z-index: 11;
-  position: relative;
+  margin-top: 158px;
   overflow-x: hidden;
 }
 
