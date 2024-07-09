@@ -386,6 +386,17 @@ ul {
     align-items: flex-start;
     justify-content: space-between;
     overflow: hidden;
+    padding-top: 100px;
+    position: relative;
+    &::after{
+        content: '';
+        height: 120px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #FFFFFF;
+    }
 }
 
 .key-features-left {
@@ -393,9 +404,9 @@ ul {
     width: 40%;
     .key-features-left-inner{
         background: #1D99DF;
-        padding: 70px 60px;
+        padding: 90px 60px;
         width: 100%;
-        top: 0px !important;
+        top: -20px !important;
         height: 110vh;
     }
     h3 {
