@@ -211,13 +211,9 @@
     <!-- banner section end -->
 
     <!-- key-features-section start -->
-    <section class="key-features-section main-content"
-        data-spy="scroll"
-        data-target="#list-example"
-        data-offset="20"
-    >
+    <div class="key-features-section main-content" data-spy="scroll" data-offset="0">
         <div class="key-features-left sidebar">
-            <div class="key-features-left-inner sidebar__inner" id="list-example">
+            <div class="key-features-left-inner sidebar__inner">
                 <h3>Key Features</h3>
                 <ul>
                     <li><img src="./assets/images/icons/key-icon1.svg" alt="icon"> <span>No cartridges needed</span>
@@ -290,7 +286,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- key-features-section end -->
 
     <!-- img-slider start -->
@@ -394,8 +390,8 @@
         var sidebarSticky = $(".sidebar");
     if (sidebarSticky.length) {
         var sidebar = new StickySidebar(".sidebar", {
-            topSpacing: 20,
-            bottomSpacing: 20,
+            topSpacing: 0,
+            bottomSpacing: 0,
             containerSelector: ".main-content",
             innerWrapperSelector: ".sidebar__inner",
         });
