@@ -216,6 +216,9 @@ ul {
 .mobile-banner-img {
   text-align: center;
 }
+.mobile-banner-img img{
+  width: 100%;
+}
 
 .rating-slider {
   overflow-x: hidden;
@@ -351,6 +354,7 @@ ul {
   position: sticky;
   top: 0px;
   background: #1D99DF;
+  padding: 70px 60px;
 }
 
 .key-features-section {
@@ -371,8 +375,8 @@ ul {
   margin-left: auto;
   display: inline-block;
   vertical-align: top;
-  /* float: right; */
   background: #F1F1F1;
+  padding: 70px 60px;
 }
 .key-features-left h3 {
   color: #FFF;
