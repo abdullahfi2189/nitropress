@@ -12,6 +12,13 @@
   }
   
 }
+@media only screen and (max-width: 1600px) {
+  .key-features-left ul li img {
+    height: 30px;
+    width: 30px;
+  }
+
+}
 @media only screen and (max-width: 1400px) {
   .key-features-left {
     padding: 60px 40px;
@@ -22,6 +29,7 @@
   .img-slider-inner .img-slider-right .slick-track {
     gap: 20px;
   }
+
 }
 @media only screen and (max-width: 1200px) {
   .banner-left {
@@ -98,11 +106,14 @@
     }
   .key-features-section .key-features-right {
     width: 100%;
+    padding-bottom: 20px !important;
   }
   .key-features-section .key-features-right-content {
     max-width: 500px;
     margin: auto;
+    margin-bottom: 50px;
   }
+  
   .banner-top-text {
     max-width: 385px;
     margin: auto;
