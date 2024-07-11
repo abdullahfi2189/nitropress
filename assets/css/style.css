@@ -357,25 +357,6 @@ ul {
   padding: 70px 60px;
 }
 
-
-.key-features-item {
-  display: none;
-}
-.key-features-item.active{
-  display: block;
-}
-
-/* .key-features-menu.active~.space-menu {
-  display: none;
-}
-
-.space-menu.active~.key-features-menu {
-  display: none;
-} */
-/* .space-menu {
-  display: none;
-} */
-
 .key-features-section {
   width: 100%;
   margin: 50px auto;

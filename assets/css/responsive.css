@@ -1,9 +1,16 @@
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
+  .key-features-item {
+    display: none;
+  }
+  .key-features-item.active{
+    display: block;
+  }
   .container {
     max-width: 1340px !important;
     padding: 0px 20px;
     margin: auto;
   }
+  
 }
 @media only screen and (max-width: 1400px) {
   .key-features-left {
@@ -66,6 +73,12 @@
   }
   .key-features-section {
     flex-wrap: wrap;
+  }
+  .space-menu{
+    margin-top: 50px;
+  }
+  .key-features-menu-2, .space-menu-2{
+    display: none !important;
   }
   .key-features-section .key-features-left {
     background: #1D99DF !important;
